@@ -1,0 +1,47 @@
+
+
+<p class="bg-info">
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ducimus impedit
+  atque blanditiis nobis sequi dolorem totam quo enim quaerat?
+</p>
+
+<div class="mb-3">
+  <label for="" class="form-label">category</label>
+  <select class="form-select form-select-lg" [(ngModel)]="selectedCategoryId">
+    <option [value]="ca.id" *ngFor="let ca of categories">
+      {{ ca.name }}
+    </option>
+  </select>
+</div>
+
+<app-products
+  (onquantityChanged)="viewquant($event)"
+  (onObjCreated)="viewObj($event)"
+  [receivedSelectedCatId]="selectedCategoryId"
+></app-products>
+<app-delete></app-delete>
+<div class="table-responsive mt-3">
+  <table class="table table-primary">
+    <thead>
+      <tr>
+        <th scope="col">name</th>
+        <th scope="col">price</th>
+        <th scope="col">quantity</th>
+        <th scope="col">totaL price</th>
+        <th>delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prod of productslist">
+        <td scope="row">{{ prod.name }}</td>
+        <td>{{ prod.price }}</td>
+        <td>{{ prod.totalquantity }}</td>
+
+        <td></td>
+        <td>
+          <button (click)="delete()" class="btn btn-danger">delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

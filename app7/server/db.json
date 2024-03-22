@@ -1,0 +1,153 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "nokia",
+      "imgUrl": "assets/lap.jpeg",
+      "catId": "2",
+      "quantity": 0,
+      "price": 15000
+    },
+    {
+      "id": "2",
+      "name": "nokia",
+      "imgUrl": "assets/lap.jpeg",
+      "catId": "2",
+      "quantity": 0,
+      "price": 15000
+    },
+    {
+      "id": "3",
+      "name": "nokia",
+      "imgUrl": "assets/lap.jpeg",
+      "catId": "2",
+      "quantity": 0,
+      "price": 15000
+    },
+    {
+      "id": "4",
+      "name": "nokia",
+      "imgUrl": "assets/lap.jpeg",
+      "catId": "2",
+      "quantity": 0,
+      "price": 15000
+    },
+    {
+      "id": "5",
+      "name": "nokia",
+      "imgUrl": "assets/lap.jpeg",
+      "catId": "2",
+      "quantity": 0,
+      "price": 15000
+    },
+    {
+      "id": "6",
+      "name": "nokia",
+      "imgUrl": "assets/lap.jpeg",
+      "catId": "2",
+      "quantity": 0,
+      "price": 15000
+    },
+    {
+      "id": "7",
+      "name": "samsung",
+      "imgUrl": "assets/mob.jpeg",
+      "catId": "1",
+      "quantity": 27,
+      "price": 8000
+    },
+    {
+      "id": "8",
+      "name": "samsung",
+      "imgUrl": "assets/mob.jpeg",
+      "catId": "1",
+      "quantity": 27,
+      "price": 8000
+    },
+    {
+      "id": "9",
+      "name": "samsung",
+      "imgUrl": "assets/mob.jpeg",
+      "catId": "1",
+      "quantity": 27,
+      "price": 8000
+    },
+    {
+      "id": "10",
+      "name": "samsung",
+      "imgUrl": "assets/mob.jpeg",
+      "catId": "1",
+      "quantity": 27,
+      "price": 8000
+    },
+    {
+      "id": "11",
+      "name": "samsung",
+      "imgUrl": "assets/mob.jpeg",
+      "catId": "1",
+      "quantity": 27,
+      "price": 8000
+    },
+    {
+      "id": "7ffc",
+      "name": "nokia",
+      "quantity": 555,
+      "price": 5000,
+      "imgUrl": "assets/lap.jpeg",
+      "catId": "2"
+    },
+    {
+      "id": "2809",
+      "name": "samsung",
+      "quantity": 54,
+      "price": 9000,
+      "catId": "2",
+      "imgUrl": "assets/lap.jpeg"
+    },
+    {
+      "id": "e8c4",
+      "name": "dell",
+      "quantity": 99,
+      "price": 7000,
+      "imgUrl": "assets/lap.jpeg",
+      "catId": "2"
+    },
+    {
+      "id": "daa1",
+      "name": "nokia",
+      "quantity": 99,
+      "price": 8000,
+      "imgUrl": "assets/lap.jpeg",
+      "catId": "2"
+    },
+    {
+      "id": "b8f1",
+      "name": "nokia",
+      "quantity": 50,
+      "price": 5000,
+      "imgUrl": "assets/tap",
+      "catId": "3"
+    },
+    {
+      "id": "5981",
+      "name": "nokia",
+      "quantity": 55,
+      "price": 4000,
+      "catId": "3"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "mobile"
+    },
+    {
+      "id": "2",
+      "name": "laptop"
+    },
+    {
+      "id": "3",
+      "name": "taplet"
+    }
+  ]
+}

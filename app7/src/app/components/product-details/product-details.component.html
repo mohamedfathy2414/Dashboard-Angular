@@ -1,0 +1,36 @@
+<p>{{ product?.name }}</p>
+<h1>hii</h1>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img [src]="product?.imgUrl" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">name:{{ product?.name }}</h5>
+        <h5 class="card-title">quantity:{{ product?.quantity }}</h5>
+        <h5 class="card-title">price:{{ product?.price }}</h5>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">
+          <button (click)="goBack()" class="btn btn-success">
+            back
+          </button></small
+        >
+        <button></button>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">
+          <button
+            (click)="prev()"
+            [disabled]="productid == productsIds[0]"
+            class="btn btn-warning m-3"
+          >
+            previous
+          </button>
+          <button class="btn btn-danger m-3">next</button>
+        </small>
+        <button></button>
+      </div>
+    </div>
+  </div>
+</div>

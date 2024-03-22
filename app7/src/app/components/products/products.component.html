@@ -1,0 +1,37 @@
+<div class="row row-cols-1 row-cols-md-4 mt-4 g-4 bg-warning">
+  <ng-container *ngFor="let prod of filteredProduct">
+    @if (prod.quantity!=0) {
+    <div class="col">
+      <div
+        ProductCard
+        defaultColor="yellow"
+        class="card h-100"
+        [ngClass]="{ 'bg-warning': prod.quantity == 1 }"
+      >
+        <img [src]="prod.imgUrl" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ prod.name }}</h5>
+          <p class="card-text">quantity:{{ prod.quantity }}</p>
+          <p class="card-text">price:{{ prod.price }}</p>
+          <input type="number" #itemCount class="form-control" />
+          <button class="btn btn-primary mt-2 p-2" (click)="buy(prod)">
+            buy
+          </button>
+          <button
+            (click)="gotodetails(prod.id)"
+            class="btn btn-danger ms-3 ps-2 mt-2 p-2"
+          >
+            details
+          </button>
+          <button (click)="deleteproduct(prod.id)" class="btn btn-danger m-3">
+            delete
+          </button>
+          <button (click)="updateproduct(prod.id)" class="btn btn-danger m-3">
+            update
+          </button>
+        </div>
+      </div>
+    </div>
+    }
+  </ng-container>
+</div>
